@@ -1,28 +1,119 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div class="home">
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
+    >
+      <h5 class="my-0 mr-md-auto font-weight-normal">PrimePyre</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Home</a>
+        <a class="p-2 text-dark" href="#">products</a>
+        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="#">Pricing</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 box-shadow">
+        <h4>categories</h4>
+        <ul class="list-unstyled mb-4">
+          <li>shoes</li>
+          <li>phones</li>
+          <li>computers</li>
+          <li>watches</li>
+        </ul>
+      </div>
+        <products
+          v-for="product in products"
+          :productsInfo="product"
+          :key="product.id"
+        />
+    </div>
+      
+    </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import products from "./components/products";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "home",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  data() {
+    return {
+      products: [
+        {
+          name: "Macbook",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/macbook-pro.jpg"),
+          id: 1
+        },
+        {
+          name: "Gaming console",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/ps4.jpg"),
+          id: 2
+        },
+        {
+          name: "Shoes",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/shoes.jpg"),
+          id: 3
+        },
+        {
+          name: "Shoes",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/shoes2.jpg"),
+          id: 4
+        },
+        {
+          name: "Watch",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/watch.jpg"),
+          id: 5
+        },
+        {
+          name: "Watch",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/watch3.jpg"),
+          id: 6
+        },
+        {
+          name: "phone",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/phone.jpg"),
+          id: 7
+        },
+        {
+          name: "books",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/books.jpg"),
+          id: 8
+        },
+        {
+          name: "speakers",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/smart-speakers.jpg"),
+          id: 9
+        },
+        {
+          name: "computer accessories",
+          price: "3000  naira",
+          imageLink: require("@/assets/images/accessories.jpg"),
+          id: 10
+        }
+      ]
+    };
+  },
+  components: {
+    products
+  }
+};
+</script>
+<style scoped>
+ul{
+  height: 100%;
+  width: 100%;
 }
 </style>
