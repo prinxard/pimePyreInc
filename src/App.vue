@@ -23,6 +23,9 @@
           <li>watches</li>
         </ul>
       </div>
+      <div class="col-lg-9 float-right">
+       <carousel />
+      </div>
     </div>
     <div class="row col-9 float-right">
 <products
@@ -39,6 +42,7 @@
 
 <script>
 import products from "./components/products";
+import carousel from "./components/carousel";
 
 export default {
   name: "home",
@@ -110,7 +114,8 @@ export default {
     };
   },
   components: {
-    products
+    products,
+    carousel
   }
 };
 </script>

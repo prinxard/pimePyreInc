@@ -3,6 +3,9 @@ import 'mutationobserver-shim'
 import Vue from 'vue'
 import './plugins/bootstrap-vue'
 import App from './App.vue'
+import EasySlider from 'vue-easy-slider'
+
+Vue.use(EasySlider)
 
 Vue.config.productionTip = false
 
