@@ -7,7 +7,7 @@
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Home</a>
         <a class="p-2 text-dark" href="#">products</a>
-        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="#">cart</a>
         <a class="p-2 text-dark" href="#">Pricing</a>
       </nav>
       <a class="btn btn-outline-primary" href="#">Sign up</a>
