@@ -55,7 +55,7 @@ export default {
 <style  scoped>
 img{
     width: 100%;
-    justify-items: center;
+   height: 100%;
 }
 </style>
 
