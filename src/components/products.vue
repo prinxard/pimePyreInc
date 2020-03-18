@@ -8,7 +8,7 @@
      height="200px" />
       <div class="card-body">
         <h5 class="card-title">{{ productsInfo.name }}</h5>
-        <p>{{ productsInfo.price }}</p>
+        <p>  &#8358; {{ productsInfo.price }}</p>
         <a href="#" class="btn btn-primary">Buy Now</a>
       </div>
     </div>
