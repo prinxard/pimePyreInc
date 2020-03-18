@@ -14,20 +14,23 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-2 box-shadow">
+      <div class="col-lg-2 box-shadow ml-5">
         <h4>categories</h4>
-        <ul class="list-unstyled mb-4">
+        <ul class="list-unstyled">
           <li>shoes</li>
           <li>phones</li>
           <li>computers</li>
           <li>watches</li>
         </ul>
       </div>
-        <products
+    </div>
+    <div class="row col-9 float-right">
+<products
           v-for="product in products"
           :productsInfo="product"
           :key="product.id"
         />
+
     </div>
       
     </div>
@@ -112,8 +115,9 @@ export default {
 };
 </script>
 <style scoped>
-ul{
-  height: 100%;
-  width: 100%;
+
+*{
+  box-sizing: border-box;
 }
+
 </style>
