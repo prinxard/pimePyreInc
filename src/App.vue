@@ -13,18 +13,21 @@
           <li>watches</li>
         </ul>
       </div>
-      <div class="col-lg-6 float-right">
+      <div class="col-lg-5 offset-lg-1">
        <carousel />
       </div>
     </div>
-    <div class="row col-lg-11">
-<products
+    
+    <div class="row col-lg-11 offset-lg-1">
+      
+      <products
           v-for="product in products"
           :productsInfo="product"
           :key="product.id"
         />
 
     </div>
+
       
     </div>
 
