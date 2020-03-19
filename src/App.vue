@@ -1,18 +1,8 @@
 <template>
   <div class="home">
-    <div
-      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
-    >
-      <h5 class="my-0 mr-md-auto font-weight-normal">PrimePyre</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">products</a>
-        <a class="p-2 text-dark" href="#">cart</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a>
-    </div>
 
+ <Header />
+        
     <div class="row">
       <div class="col-lg-2 box-shadow ml-5">
         <h4>categories</h4>
@@ -23,11 +13,11 @@
           <li>watches</li>
         </ul>
       </div>
-      <div class="col-lg-9 float-right">
+      <div class="col-lg-6 float-right">
        <carousel />
       </div>
     </div>
-    <div class="row col-9 float-right">
+    <div class="row col-lg-11">
 <products
           v-for="product in products"
           :productsInfo="product"
@@ -41,8 +31,10 @@
 </template>
 
 <script>
+import Header from "./components/Header";
 import products from "./components/products";
 import carousel from "./components/carousel";
+
 
 export default {
   name: "home",
@@ -114,8 +106,10 @@ export default {
     };
   },
   components: {
+    Header,
     products,
     carousel
+   
   }
 };
 </script>
