@@ -28,7 +28,7 @@
 
     </div>
 
-      
+      <Footer />
     </div>
 
 </template>
@@ -37,6 +37,7 @@
 import Header from "./components/Header";
 import products from "./components/products";
 import carousel from "./components/carousel";
+import Footer from "./components/Footer";
 
 
 export default {
@@ -111,7 +112,8 @@ export default {
   components: {
     Header,
     products,
-    carousel
+    carousel,
+    Footer
    
   }
 };
