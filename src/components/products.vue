@@ -1,12 +1,12 @@
 <template>
 <div class="products-component">
-    <div class="card ml-4 mt-4" style="width: 18rem;">
+    <div class="card ml-4 mt-4 kard">
       <img
         :src="productsInfo.imageLink"
-        class="card-img-top" 
+        class="card-img-top image" 
         alt="product-image"
-     height="200px" />
-      <div class="card-body">
+      />
+      <div class="card-body body-card">
         <h5 class="card-title">{{ productsInfo.name }}</h5>
         <p>  &#8358; {{ productsInfo.price }}</p>
         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -25,5 +25,13 @@ export default {
 </script>
 
 <style scoped>
-
+.kard{
+  width: 18rem;
+}
+.image{
+  height: 200px;
+}
+.body-card{
+  background-color: #eef9ff;;
+}
 </style>

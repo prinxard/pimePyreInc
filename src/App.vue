@@ -1,19 +1,24 @@
 <template>
+
   <div class="home">
 
- <Header />
+<Header />
+
+ 
         
-    <div class="row">
+    <div class="row cat-slider">
       <div class="col-lg-2 box-shadow ml-5">
         <h4>categories</h4>
-        <ul class="list-unstyled">
+        <!-- <ul class="list-unstyled">
           <li>shoes</li>
           <li>phones</li>
           <li>computers</li>
           <li>watches</li>
-        </ul>
+        </ul> -->
+        <Categories />
+        
       </div>
-      <div class="col-lg-5 offset-lg-1">
+      <div class="col-lg-5 offset-lg-1 mb-5 carousel">
        <carousel />
       </div>
     </div>
@@ -27,8 +32,10 @@
         />
 
     </div>
-
-      <Footer />
+<div class="footer">
+<Footer />
+</div>
+      
     </div>
 
 </template>
@@ -38,6 +45,7 @@ import Header from "./components/Header";
 import products from "./components/products";
 import carousel from "./components/carousel";
 import Footer from "./components/Footer";
+import Categories from "./components/Categories"
 
 
 export default {
@@ -111,6 +119,7 @@ export default {
   },
   components: {
     Header,
+    Categories,
     products,
     carousel,
     Footer
@@ -120,8 +129,11 @@ export default {
 </script>
 <style scoped>
 
-*{
-  box-sizing: border-box;
-}
 
+.cat-slider{
+  padding-top: 100px;
+}
+.home{
+  background-color: #eef9ff;
+}
 </style>

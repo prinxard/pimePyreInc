@@ -1,5 +1,4 @@
 <template>
-  <!-- Footer -->
   <footer class="bg-dark">
     <div class="container footer-container mt-5 pt-5 text-white">
     <div class="footer-top">
@@ -8,7 +7,7 @@
           <div class="col-md-3 footer-about">
             <h3>About us</h3>
             <p>
-              We are an emerging tech startup that is devoted to making sure you have the best possible online shopping experience
+              We are designed to give you the best online shopping experience
             </p>
             <p>© Prinsyre Inc.</p>
           </div>
