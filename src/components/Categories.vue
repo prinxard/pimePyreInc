@@ -1,7 +1,7 @@
 <template> 
 <div>
 <ul v-for="category in categoryList" :key="category.id">
-    <li > {{categoryList.name}}</li>
+    <li >{{category.name}}</li>
 </ul>
 </div>
 
