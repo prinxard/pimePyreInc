@@ -8,13 +8,8 @@
         
     <div class="row cat-slider">
       <div class="col-lg-2 box-shadow ml-5">
-        <h4>categories</h4>
-        <!-- <ul class="list-unstyled">
-          <li>shoes</li>
-          <li>phones</li>
-          <li>computers</li>
-          <li>watches</li>
-        </ul> -->
+        <h4 class="text-center mb-3">categories</h4>
+        
         <Categories />
         
       </div>
@@ -89,27 +84,28 @@ export default {
           price: 10000,
           imageLink: require("@/assets/images/watch3.jpg"),
           id: 6
+          
         },
         {
-          name: "phone",
+          name: "Phone",
           price: 40000,
           imageLink: require("@/assets/images/phone.jpg"),
           id: 7
         },
         {
-          name: "books",
+          name: "Books",
           price: 2500,
           imageLink: require("@/assets/images/books.jpg"),
           id: 8
         },
         {
-          name: "speakers",
+          name: "Speakers",
           price: 100000,
           imageLink: require("@/assets/images/smart-speakers.jpg"),
           id: 9
         },
         {
-          name: "computer accessories",
+          name: "Computer accessories",
           price: 30000,
           imageLink: require("@/assets/images/accessories.jpg"),
           id: 10

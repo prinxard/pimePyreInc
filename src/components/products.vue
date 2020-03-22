@@ -1,6 +1,6 @@
 <template>
 <div class="products-component">
-    <div class="card ml-4 mt-4 kard">
+    <div class="card ml-4 mt-4">
       <img
         :src="productsInfo.imageLink"
         class="card-img-top image" 
@@ -25,11 +25,16 @@ export default {
 </script>
 
 <style scoped>
-.kard{
-  width: 18rem;
+.card{
+  width: 16rem;
+
 }
+
 .image{
   height: 200px;
+}
+.image:hover{
+  transform: scale(1.1);
 }
 .body-card{
   background-color: #eef9ff;;
