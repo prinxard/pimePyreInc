@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import ProductPage from '../views/ProductPage.vue'
+import ProductZoomer from 'vue-product-zoomer'
+Vue.use(ProductZoomer)
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/productpage',
+    name: 'ProductPage',
+    component: ProductPage
   },
   {
     path: '/about',
