@@ -1,5 +1,9 @@
 <template>
-  <h1> {{items[0].name }} </h1>
+<div>
+ <h1> {{items[0].name }} </h1>
+  <h1> {{items[0].price}} </h1>
+</div>
+ 
 </template>
 
 

@@ -5,14 +5,15 @@
         :src="productsInfo.imageLink"
         class="card-img-top image" 
         alt="product-image"
+        :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"
       />
       <div class="card-body body-card">
         <h5 class="card-title">{{ productsInfo.name }}</h5>
         <p>  &#8358; {{ productsInfo.price }}</p>
        
-        <button class="btn-primary" :to="`/product/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`">
+         <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button class=" btn btn-primary">
            buy me
-        </button>
+        </button></router-link>
         <!-- <a href="#" class="btn btn-primary" :to="`/product/${product.id}-${product.name.replace(/[' ']+/g,'-').toLowerCase()}`">Buy Now</a> -->
       </div>
     </div>
