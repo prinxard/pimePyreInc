@@ -9,7 +9,8 @@
       <div class="card-body body-card">
         <h5 class="card-title">{{ productsInfo.name }}</h5>
         <p>  &#8358; {{ productsInfo.price }}</p>
-        <button :to="`/productsInfo/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`">
+       
+        <button class="btn-primary" :to="`/product/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`">
            buy me
         </button>
         <!-- <a href="#" class="btn btn-primary" :to="`/product/${product.id}-${product.name.replace(/[' ']+/g,'-').toLowerCase()}`">Buy Now</a> -->
@@ -23,9 +24,10 @@
 
 <script>
 export default {
-  props: ["productsInfo"]
-};
+props: ['productsInfo'],
+}
 </script>
+
 
 <style scoped>
 .card{

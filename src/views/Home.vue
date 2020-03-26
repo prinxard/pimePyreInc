@@ -44,11 +44,10 @@ import Categories from "../components/Categories"
 
 
 export default {
-  name: "home",
 
   data() {
     return {
-       products: this.$store.state.products,
+products: this.$store.state.products,
       // products: [
       //   {
       //     name: "Macbook",
@@ -112,7 +111,7 @@ export default {
       //     id: 10
       //   }
       // ]
-    };
+    }
   },
   components: {
     Header,
