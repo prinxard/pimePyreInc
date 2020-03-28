@@ -50,7 +50,7 @@ export default {
 .cat-slider {
   padding-top: 100px;
 }
-.home {
+/* .home {
   background-color: #eef9ff;
-}
+} */
 </style>
