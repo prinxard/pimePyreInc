@@ -12,7 +12,7 @@
         <p>  &#8358; {{ productsInfo.price }}</p>
        
          <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button class=" btn btn-primary">
-           buy me
+           Buy Now
         </button></router-link>
         <!-- <a href="#" class="btn btn-primary" :to="`/product/${product.id}-${product.name.replace(/[' ']+/g,'-').toLowerCase()}`">Buy Now</a> -->
       </div>
