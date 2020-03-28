@@ -82,7 +82,23 @@
         </div>
       </div>
     </div>
+
+    <div class="container align-content-center mt-5 text-center">
+    <div class="row">
+      <div class="col-lg-8 ">
+        <div class="card">
+  <h5 class="card-header">Product Description</h5>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    
   </div>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
 </template>
 
 <script>
