@@ -109,8 +109,8 @@ export default {
 }
 
 .image-thumbnail {
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
   padding: 10px 3px;
   border: 1px solid #176894;
   margin: 5px 5px;
