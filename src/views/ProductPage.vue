@@ -30,7 +30,7 @@
         <strike> &#8358; {{ items[0].fomerPrice }}</strike>
         <hr />
         <b-button block variant="warning" class="mb-3">
-          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-shopping-cart float-left"></i>
           <span>ADD TO CART</span>
         </b-button>
         <hr />
@@ -112,6 +112,8 @@ export default {
   height: 50px;
   width: 50px;
   padding: 10px 3px;
+  border: 1px solid #176894;
+  margin: 5px 5px;
 }
 .decription {
   overflow: hidden;

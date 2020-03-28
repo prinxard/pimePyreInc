@@ -6,7 +6,7 @@
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2  text-white" href="#">Home</a>
         <a class="p-2  text-white" href="#">Products</a>
-        <a class="p-2  text-white" href="#">Cart</a>
+        <a class="p-2  text-white" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
         <a class="p-2  text-white" href="#">Pricing</a>
       </nav>
       <a class="btn btn-outline-primary text-white" href="#">Sign up</a>
