@@ -1,12 +1,12 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5 ">
     <div class="row">
       <div class="image col-lg-4">
-        <img :src="items[0].imageLink" alt srcset class="d-block main-image" />
-        <div class="thumbnails mr-5">
-          <img :src="items[0].imageLink" alt srcset class="image-thumbnail" />
-          <img :src="items[0].imageLink" alt srcset class="image-thumbnail" />
-          <img :src="items[0].imageLink" alt srcset class="image-thumbnail" />
+        <img :src="items[0].imageLink" alt="product-image" class="d-block main-image" />
+        <div class="thumbnails pr-3">
+          <img :src="items[0].imageLink" alt="product-image" class="image-thumbnail" />
+          <img :src="items[0].imageLink" alt="product-image" class="image-thumbnail" />
+          <img :src="items[0].imageLink" alt="product-image" class="image-thumbnail" />
         </div>
 
         <hr />

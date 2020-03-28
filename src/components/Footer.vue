@@ -4,14 +4,14 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 footer-about">
+          <div class="col-lg-3 footer-about">
             <h3>About us</h3>
             <p>
               We are designed to give you the best online shopping experience
             </p>
             <p>© Prinsyre Inc.</p>
           </div>
-          <div class="col-md-4 offset-md-1 footer-contact">
+          <div class="col-lg-4 offset-md-1 footer-contact">
             <h3>Contact</h3>
             <p>
               <i class="fas fa-map-marker-alt"></i> Pent house Estate Lugbe Abuja
@@ -23,14 +23,14 @@
             </p>
             <p><i class="fab fa-skype"></i> Skype: prinxard</p>
           </div>
-          <div class="col-md-4 footer-links">
+          <div class="col-lg-4 footer-links">
             <div class="row">
               <div class="col">
                 <h3>Links</h3>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <p><a class="scroll-link" href="#top-content">Home</a></p>
                 <p><a href="#">Pricing</a></p>
                 <p><a href="#">Our clients</a></p>
@@ -73,4 +73,5 @@ a:hover{
   text-decoration: none;
   color: azure;
 }
+
 </style>
