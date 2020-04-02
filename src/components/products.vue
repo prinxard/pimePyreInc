@@ -14,7 +14,6 @@
          <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button class=" btn btn-primary">
            Buy Now
         </button></router-link>
-        <!-- <a href="#" class="btn btn-primary" :to="`/product/${product.id}-${product.name.replace(/[' ']+/g,'-').toLowerCase()}`">Buy Now</a> -->
       </div>
     </div>
 </div>

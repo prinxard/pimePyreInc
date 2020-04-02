@@ -1,6 +1,6 @@
 <template> 
 <div>
-<ul v-for="category in categoryList" :key="category.id">
+<ul>
     <li class="catlist btn btn-primary" >{{category.name}}</li>
 </ul>
 </div>
@@ -9,28 +9,10 @@
 
 <script>
 export default {
+    props: ['category'],
   data() {
     return {
-        categoryList:[
-            {
-                name:'Shoes',
-                id: 1
-            },
-            {
-                name: 'Phones',
-                id: 2
-            },
         
-            {
-                name: 'Computers',
-                id: 3
-            },
-        
-            {
-                name: 'Watches',
-                id: 4
-            }
-        ]
     };
   }
 };

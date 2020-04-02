@@ -1,56 +1,74 @@
 <template>
   <div class="home">
-    <Header />
 
-    <div class="row cat-slider">
-      <div class="col-lg-2 box-shadow ml-5">
+    <div class="row cat-slider"> <!-- category and carousel row starts here -->
+      <div class="col-lg-2 box-shadow ml-5"> <!-- categories starts here -->
         <h4 class="text-center mb-3">categories</h4>
+        <Categories v-for="cat in categoryList" :category="cat" :key="cat.id" />
+      </div> <!-- categories ends here -->
 
-        <Categories />
-      </div>
-      <div class="col-lg-5 offset-lg-1 mb-5 carousel">
+      <div class="col-lg-5 offset-lg-1 mb-5 carousel"> <!-- carousel starts here -->
         <carousel />
-      </div>
-    </div>
+      </div>  <!-- carousel ends here -->
 
-    <div class="row col-lg-11 offset-lg-1">
+    </div> <!-- category and carousel row ends here -->
+
+    <div class="row col-lg-11 offset-lg-1"> <!-- products row starts here -->
       <products
         v-for="product in products"
         :productsInfo="product"
         :key="product.id"
-      />  
-    </div>
-    <!-- <Footer /> -->
+      />
+    </div> <!-- products row ends here -->
+
   </div>
 </template>
 
 <script>
-import Header from "../components/Header";
 import products from "../components/products";
 import carousel from "../components/carousel";
 import Categories from "../components/Categories";
 
 export default {
-  name:"Home",
+  name: "home",
   data() {
     return {
-      products: this.$store.state.products
+      products: this.$store.state.products,
+      
+      // category array
+      categoryList: [
+        {
+          name: "Shoes",
+          id: 1
+        },
+        {
+          name: "Phones",
+          id: 2
+        },
+
+        {
+          name: "Computers",
+          id: 3
+        },
+
+        {
+          name: "Watches",
+          id: 4
+        }
+      ]
     };
   },
   components: {
-    Header,
     Categories,
     products,
-    carousel,
-   
+    carousel
   }
 };
 </script>
 <style scoped>
+
 .cat-slider {
   padding-top: 100px;
 }
-/* .home {
-  background-color: #eef9ff;
-} */
+
 </style>
