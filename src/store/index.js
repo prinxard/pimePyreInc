@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     products: [
       {
+        inStock: 10,
         fomerPrice: "500,000",
         details: "most sophisticated laptop you'll ever use",
         name: "Macbook",
@@ -15,6 +16,7 @@ export default new Vuex.Store({
         id: 1
       },
       {
+        inStock: 8,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Gaming console",
@@ -23,6 +25,7 @@ export default new Vuex.Store({
         id: 2
       },
       {
+        inStock: 10,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Shoes",
@@ -31,6 +34,7 @@ export default new Vuex.Store({
         id: 3
       },
       {
+        inStock: 6,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Shoes",
@@ -39,6 +43,7 @@ export default new Vuex.Store({
         id: 4
       },
       {
+        inStock: 1,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Watch",
@@ -47,6 +52,7 @@ export default new Vuex.Store({
         id: 5
       },
       {
+        inStock: 1,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Watch",
@@ -56,6 +62,7 @@ export default new Vuex.Store({
         
       },
       {
+        inStock: 0,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Phone",
@@ -64,6 +71,7 @@ export default new Vuex.Store({
         id: 7
       },
       {
+        inStock: 0,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Books",
@@ -72,6 +80,7 @@ export default new Vuex.Store({
         id: 8
       },
       {
+        inStock: 0,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Speakers",
@@ -80,6 +89,7 @@ export default new Vuex.Store({
         id: 9
       },
       {
+        inStock: 17,
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Computer accessories",
