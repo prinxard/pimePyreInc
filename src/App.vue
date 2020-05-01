@@ -27,6 +27,12 @@ export default {
 
 
 <style lang="scss">
+
+
+body{
+  margin: 0;
+}
+
  #app {
   background-color: #eef9ff;
  }

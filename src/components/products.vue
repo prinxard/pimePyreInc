@@ -33,6 +33,8 @@ props: ['productsInfo'],
 
 
 <style scoped>
+
+
 .card{
   width: 16rem;
 
