@@ -4,7 +4,6 @@
       <Header />
       </div>
       <div>
-        
       <router-view/>
        <Footer />
     </div>
@@ -27,11 +26,6 @@ export default {
 
 
 <style lang="scss">
-
-
-body{
-  margin: 0;
-}
 
  #app {
   background-color: #eef9ff;
