@@ -9,14 +9,14 @@
             <p>
               We are designed to give you the best online shopping experience
             </p>
-            <p>© Prinsyre Inc.</p>
+            <p>© 2020 Prinsyre Inc.</p>
           </div>
           <div class="col-lg-4 offset-md-1 footer-contact">
             <h3>Contact</h3>
             <p>
               <i class="fas fa-map-marker-alt"></i> Pent house Estate Lugbe Abuja
             </p>
-            <p><i class="fas fa-phone"></i> Phone: +2348084785687</p>
+            <p><i class="fas fa-phone"></i> Phone: +234785687</p>
             <p>
               <i class="fas fa-envelope"></i> Email:
               <a href="mailto:prinxard@gmail.com">prinxard@gmail.com</a>
