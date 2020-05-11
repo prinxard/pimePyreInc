@@ -9,7 +9,7 @@
             <p>
               We are designed to give you the best online shopping experience
             </p>
-            <p>© 2020 Prinsyre Inc.</p>
+            <p>© 2020 Prinxard Inc.</p>
           </div>
           <div class="col-lg-4 offset-md-1 footer-contact">
             <h3>Contact</h3>
