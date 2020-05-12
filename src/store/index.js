@@ -5,8 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    products: [
-      {
+    products: [{
         inStock: 10,
         fomerPrice: "500,000",
         details: "most sophisticated laptop you'll ever use",
@@ -20,7 +19,7 @@ export default new Vuex.Store({
         fomerPrice: "500,000",
         details: "Beautifully designed and durable",
         name: "Gaming console",
-        price:  "150,000",
+        price: "150,000",
         imageLink: require("@/assets/images/ps4.jpg"),
         id: 2
       },
@@ -59,7 +58,7 @@ export default new Vuex.Store({
         price: "10,000",
         imageLink: require("@/assets/images/watch3.jpg"),
         id: 6
-        
+
       },
       {
         inStock: 0,
@@ -98,8 +97,14 @@ export default new Vuex.Store({
         id: 10
       }
     ],
+    selectedProduct: null
   },
-  mutations:{},
+
+  mutations: {
+    setSelectedProductValue(state, product) {
+      state.selectedProduct = product;
+    }
+  },
   actions: {},
   modules: {}
 });
