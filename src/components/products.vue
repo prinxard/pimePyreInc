@@ -20,9 +20,7 @@
         >
           {{ productsInfo.inStock }} In stock
         </span>
-        <a @click="goToProduct(product)"
-          ><button class=" btn btn-primary">Buy Now</button></a
-        >
+          <button @click="goToProduct(product)" class=" btn btn-primary">Buy Now</button>
         <!-- <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button :disabled="productsInfo.inStock == 0" class=" btn btn-primary">
            Buy Now
         </button></router-link> -->

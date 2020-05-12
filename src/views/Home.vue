@@ -37,47 +37,42 @@ import Categories from "../components/Categories";
 export default {
   name: "home",
   data() {
-
     return {
-
-
       // category array
       categoryList: [
         {
           name: "Shoes",
-          id: 1
+          id: 1,
         },
         {
           name: "Phones",
-          id: 2
+          id: 2,
         },
 
         {
           name: "Computers",
-          id: 3
+          id: 3,
         },
 
         {
           name: "Watches",
-          id: 4
-        }
-      ]
+          id: 4,
+        },
+      ],
     };
   },
   components: {
     Categories,
     products,
-    carousel
+    carousel,
   },
-   computed: {
-      allProducts() {
-return this.$store.state.products;
-      }
-
-    }
+  computed: {
+    allProducts() {
+      return this.$store.state.products;
+    },
+  },
 };
 </script>
-
 
 <style scoped>
 .cat-slider {

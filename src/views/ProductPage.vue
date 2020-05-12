@@ -1,8 +1,8 @@
 <template>
-<div>
-<!-- <h1>{{products.name}}</h1> -->
-<h2>{{clickedProduct.price}}</h2>
-</div>
+  <div>
+    <!-- <h1>{{products.name}}</h1> -->
+    <h2>{{ clickedProduct.price }}</h2>
+  </div>
 
   <!-- <div class="container mt-5 ">
     <div class="row">
@@ -103,17 +103,15 @@
     </div>
   </div>
   </div> -->
-  
 </template>
 
 <script>
 export default {
-
   computed: {
-clickedProduct(){
-  return this.$store.state.selectedProduct;
-}
-  }
+    clickedProduct() {
+      return this.$store.state.selectedProduct;
+    },
+  },
   // name: "ProductDetails",
   // data() {
   //   return {
@@ -145,7 +143,7 @@ clickedProduct(){
 .decription {
   overflow: hidden;
 }
-h2{
+h2 {
   color: blueviolet;
 }
 </style>

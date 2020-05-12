@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Product from '../views/ProductPage.vue'
-// import products from '../components/products' 
+import ProductPage from '../views/ProductPage.vue'
 
 
 Vue.use(VueRouter)
@@ -20,7 +19,7 @@ const routes = [
   // },
 {
   path : "/productpage",
-  component : Product
+  component : ProductPage
 },
   
   {
