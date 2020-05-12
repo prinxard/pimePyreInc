@@ -82,7 +82,7 @@ export default new Vuex.Store({
       {
         inStock: 0,
         fomerPrice: "500,000",
-        details: "Beautifully designed and durable",
+        details: "Let the music out!",
         name: "Speakers",
         price: "100,000",
         imageLink: require("@/assets/images/smart-speakers.jpg"),
