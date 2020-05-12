@@ -15,9 +15,7 @@
 
     <div class="row col-lg-11 offset-lg-1"> <!-- products row starts here -->
       <products
-        v-for="product in products"
-        :productsInfo="product"
-        :key="product.id"
+      
       />
     </div> <!-- products row ends here -->
 

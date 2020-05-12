@@ -2,19 +2,26 @@
 <div class="products-component">
     <div class="card ml-4 mt-4">
 
-      <router-link  :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"> 
+      <router-link  :to="`/products/${products.id}-${products.name.replace(/[' ']+/g,'-').toLowerCase()}`"> 
       <img
-        :src="productsInfo.imageLink"
+        :src="products.imageLink"
         class="card-img-top image" 
         alt="product-image"
       />
       </router-link>
 
+      
+        
+    
+
       <div class="card-body body-card">
-        <h5 class="card-title">{{ productsInfo.name }}</h5>
-        <p>  &#8358; {{ productsInfo.price }}</p>
-       <span :class="{few: productsInfo.inStock < 10, none: productsInfo.inStock == 0}"> {{productsInfo.inStock}} In stock </span>
-         <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button :disabled="productsInfo.inStock == 0" class=" btn btn-primary">
+        v-for="product in allProducts"
+        :key="product.id"
+
+        <h5 class="card-title">{{ products.name }}</h5>
+        <p>  &#8358; {{ products.price }}</p>
+       <span :class="{few: products.inStock < 10, none: products.inStock == 0}"> {{products.inStock}} In stock </span>
+         <router-link :to="`/products/${products.id}-${products.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button :disabled="products.inStock == 0" class=" btn btn-primary">
            Buy Now
         </button></router-link>
       </div>
@@ -27,7 +34,13 @@
 
 <script>
 export default {
-props: ['productsInfo'],
+computed :{
+  allProducts(){
+    return this.$store.state.products;
+  },
+
+// props: ['productsInfo'],
+}
 }
 </script>
 

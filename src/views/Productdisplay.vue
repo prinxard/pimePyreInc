@@ -57,35 +57,37 @@
 
 <script>
 export default {
-  name: "ProductDetails",
-  data() {
-    return {
-      items: []
+
+}
+
+//   name: "ProductDetails",
+//   data() {
+//     return {
+//       items: []
      
-    };
-  },
-  methods: {
-    changeimage1: function() {
-      this.items[0].imageLink = this.items[0].imageLink;
-      console.log("items", this.items);
-    },
-    changeimage2: function() {
-      this.items[0].imageLink = this.items[0].imageLink;
-      console.log("items-2", this.items);
-    },
-    changeimage3: function() {
-      this.items[0].imageLink = this.items[0].imageLink;
-      console.log("items-3", this.items);
-    }
-  },
-  created() {
-    this.items = this.$store.state.products.filter(item => {
-      return item.id == parseInt(this.$route.params.id);
-    });
-    console.log("my item", this.items);
-    console.log("my item", typeof Number(this.$route.params.id));
-  }
-};
+//     };
+//   },
+//   methods: {
+//     changeimage1: function() {
+//       this.items[0].imageLink = this.items[0].imageLink;
+//       console.log("items", this.items);
+//     },
+//     changeimage2: function() {
+//       this.items[0].imageLink = this.items[0].imageLink;
+//       console.log("items-2", this.items);
+//     },
+//     changeimage3: function() {
+//       this.items[0].imageLink = this.items[0].imageLink;
+//       console.log("items-3", this.items);
+//     }
+//   },
+//   created() {
+//     this.items = this.$store.state.products.filter(item => {
+//       return item.id == parseInt(this.$route.params.id);
+//     });
+//     console.log("my item", this.items);
+//     console.log("my item", typeof Number(this.$route.params.id));
+//   }
 </script>
 
 <style scoped>
