@@ -5,6 +5,26 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    categoryList: [{
+        name: "Shoes",
+        id: 1,
+      },
+      {
+        name: "Phones",
+        id: 2,
+      },
+
+      {
+        name: "Computers",
+        id: 3,
+      },
+
+      {
+        name: "Watches",
+        id: 4,
+      },
+    ],
+
     products: [{
         inStock: 10,
         fomerPrice: "500,000",
@@ -101,7 +121,7 @@ export default new Vuex.Store({
   },
 
   mutations: {
-    setSelectedProductValue(state, product) {
+    selectedProductValue(state, product) {
       state.selectedProduct = product;
     }
   },

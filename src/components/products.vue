@@ -20,7 +20,7 @@
         >
           {{ productsInfo.inStock }} In stock
         </span>
-          <button @click="goToProduct(product)" class=" btn btn-primary">Buy Now</button>
+          <button @click="goToProduct(productsInfo)" class=" btn btn-primary">Buy Now</button>
         <!-- <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button :disabled="productsInfo.inStock == 0" class=" btn btn-primary">
            Buy Now
         </button></router-link> -->
@@ -30,13 +30,18 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
 
   props: ["productsInfo"],
 
+  computed: {
+        ...mapState(['products'])
+    },
+
   methods: {
     goToProduct(product) {
-      this.$store.commit("setSelectedProductValue", product);
+      this.$store.commit('selectedProductValue', product);
       this.$router.push({ path: "/productpage" });
     },
   }

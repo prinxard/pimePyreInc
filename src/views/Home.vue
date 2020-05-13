@@ -5,7 +5,11 @@
       <div class="col-lg-2 box-shadow ml-5">
         <!-- categories starts here -->
         <h4 class="text-center mb-3">categories</h4>
-        <Categories v-for="cat in categoryList" :category="cat" :key="cat.id" />
+        <Categories
+          v-for="cat in allCategories"
+          :category="cat"
+          :key="cat.id"
+        />
       </div>
       <!-- categories ends here -->
 
@@ -36,31 +40,7 @@ import Categories from "../components/Categories";
 
 export default {
   name: "home",
-  data() {
-    return {
-      // category array
-      categoryList: [
-        {
-          name: "Shoes",
-          id: 1,
-        },
-        {
-          name: "Phones",
-          id: 2,
-        },
-
-        {
-          name: "Computers",
-          id: 3,
-        },
-
-        {
-          name: "Watches",
-          id: 4,
-        },
-      ],
-    };
-  },
+  
   components: {
     Categories,
     products,
@@ -70,6 +50,10 @@ export default {
     allProducts() {
       return this.$store.state.products;
     },
+
+    allCategories() {
+      return this.$store.state.categoryList;
+    }
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <h1>{{products.name}}</h1> -->
-    <h2>{{ clickedProduct.price }}</h2>
+    <h2>{{ selectedProduct.name }}</h2>
   </div>
 
   <!-- <div class="container mt-5 ">
@@ -106,12 +106,17 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
+
   computed: {
-    clickedProduct() {
-      return this.$store.state.selectedProduct;
+        ...mapState(['selectedProduct'])
     },
-  },
+  // computed: {
+  //   clickedProduct() {
+  //     return this.$store.state.selectedProduct;
+  //   },
+  // }
   // name: "ProductDetails",
   // data() {
   //   return {
