@@ -1,26 +1,35 @@
 <template>
   <div class="home">
-
-    <div class="row cat-slider"> <!-- category and carousel row starts here -->
-      <div class="col-lg-2 box-shadow ml-5"> <!-- categories starts here -->
+    <div class="row cat-slider">
+      <!-- category and carousel row starts here -->
+      <div class="col-lg-2 box-shadow ml-5">
+        <!-- categories starts here -->
         <h4 class="text-center mb-3">categories</h4>
-        <Categories v-for="cat in categoryList" :category="cat" :key="cat.id" />
-      </div> <!-- categories ends here -->
+        <Categories
+          v-for="cat in allCategories"
+          :category="cat"
+          :key="cat.id"
+        />
+      </div>
+      <!-- categories ends here -->
 
-      <div class="col-lg-5 offset-lg-1 mb-5 carousel"> <!-- carousel starts here -->
+      <div class="col-lg-5 offset-lg-1 mb-5 carousel">
+        <!-- carousel starts here -->
         <carousel />
-      </div>  <!-- carousel ends here -->
+      </div>
+      <!-- carousel ends here -->
+    </div>
+    <!-- category and carousel row ends here -->
 
-    </div> <!-- category and carousel row ends here -->
-
-    <div class="row col-lg-11 offset-lg-1"> <!-- products row starts here -->
+    <div class="row col-lg-11 offset-lg-1">
+      <!-- products row starts here -->
       <products
-        v-for="product in products"
-        :productsInfo="product"
-        :key="product.id"
+        v-for="item in allProducts"
+        :productsInfo="item"
+        :key="item.id"
       />
-    </div> <!-- products row ends here -->
-
+    </div>
+    <!-- products row ends here -->
   </div>
 </template>
 
@@ -31,44 +40,26 @@ import Categories from "../components/Categories";
 
 export default {
   name: "home",
-  data() {
-    return {
-      products: this.$store.state.products,
-      
-      // category array
-      categoryList: [
-        {
-          name: "Shoes",
-          id: 1
-        },
-        {
-          name: "Phones",
-          id: 2
-        },
-
-        {
-          name: "Computers",
-          id: 3
-        },
-
-        {
-          name: "Watches",
-          id: 4
-        }
-      ]
-    };
-  },
+  
   components: {
     Categories,
     products,
-    carousel
-  }
+    carousel,
+  },
+  computed: {
+    allProducts() {
+      return this.$store.state.products;
+    },
+
+    allCategories() {
+      return this.$store.state.categoryList;
+    }
+  },
 };
 </script>
-<style scoped>
 
+<style scoped>
 .cat-slider {
   padding-top: 100px;
 }
-
 </style>

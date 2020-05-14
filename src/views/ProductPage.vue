@@ -1,12 +1,17 @@
 <template>
+  <!-- <div> -->
+    <!-- <h1>{{selectedProduct.name}}</h1> -->
+    <!-- <h2>{{ selectedProduct.name }}</h2> -->
+  <!-- </div> -->
+
   <div class="container mt-5 ">
     <div class="row">
       <div class="image col-lg-4">
-        <img :src="items[0].imageLink" alt="product-image" class="d-block main-image" />
+        <img :src="selectedProduct.imageLink" alt="product-image" class="d-block main-image" />
         <div class="thumbnails pr-3">
-          <img :src="items[0].imageLink" alt="product-image" class="image-thumbnail" />
-          <img :src="items[0].imageLink" alt="product-image" class="image-thumbnail" />
-          <img :src="items[0].imageLink" alt="product-image" class="image-thumbnail" />
+          <img :src="selectedProduct.imageLink" alt="selectedProduct-image" class="image-thumbnail" />
+          <img :src="selectedProduct.imageLink" alt="selectedProduct-image" class="image-thumbnail" />
+          <img :src="selectedProduct.imageLink" alt="selectedProduct-image" class="image-thumbnail" />
         </div>
 
         <hr />
@@ -22,12 +27,12 @@
         </div>
       </div>
       <div class="decription col-lg-4 text-left">
-        <h3>{{ items[0].details }}</h3>
+        <h3>{{ selectedProduct.details }}</h3>
         <hr />
         <p>
-          <strong>&#8358; {{ items[0].price }}</strong>
+          <strong>&#8358; {{ selectedProduct.price }}</strong>
         </p>
-        <strike> &#8358; {{ items[0].fomerPrice }}</strike>
+        <strike> &#8358; {{ selectedProduct.fomerPrice }}</strike>
         <hr />
         <b-button block variant="warning" class="mb-3">
           <i class="fas fa-shopping-cart float-left"></i>
@@ -98,23 +103,32 @@
     </div>
   </div>
   </div>
-  
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
-  name: "ProductDetails",
-  data() {
-    return {
-      items: []
-    };
-  },
 
-  created() {
-    this.items = this.$store.state.products.filter(item => {
-      return item.id == parseInt(this.$route.params.id);
-    });
-  }
+  computed: {
+        ...mapState(['selectedProduct'])
+    },
+  // computed: {
+  //   clickedProduct() {
+  //     return this.$store.state.selectedProduct;
+  //   },
+  // }
+  // name: "ProductDetails",
+  // data() {
+  //   return {
+  //     items: []
+  //   };
+  // },
+
+  // created() {
+  //   this.items = this.$store.state.products.filter(item => {
+  //     return item.id == parseInt(this.$route.params.id);
+  //   });
+  // }
 };
 </script>
 
@@ -133,5 +147,8 @@ export default {
 }
 .decription {
   overflow: hidden;
+}
+h2 {
+  color: blueviolet;
 }
 </style>
