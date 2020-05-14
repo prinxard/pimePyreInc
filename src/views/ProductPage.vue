@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <!-- <h1>{{products.name}}</h1> -->
-    <h2>{{ selectedProduct.name }}</h2>
-  </div>
+  <!-- <div> -->
+    <!-- <h1>{{selectedProduct.name}}</h1> -->
+    <!-- <h2>{{ selectedProduct.name }}</h2> -->
+  <!-- </div> -->
 
-  <!-- <div class="container mt-5 ">
+  <div class="container mt-5 ">
     <div class="row">
       <div class="image col-lg-4">
-        <img :src="product.imageLink" alt="product-image" class="d-block main-image" />
+        <img :src="selectedProduct.imageLink" alt="product-image" class="d-block main-image" />
         <div class="thumbnails pr-3">
-          <img :src="product.imageLink" alt="product-image" class="image-thumbnail" />
-          <img :src="product.imageLink" alt="product-image" class="image-thumbnail" />
-          <img :src="product.imageLink" alt="product-image" class="image-thumbnail" />
+          <img :src="selectedProduct.imageLink" alt="selectedProduct-image" class="image-thumbnail" />
+          <img :src="selectedProduct.imageLink" alt="selectedProduct-image" class="image-thumbnail" />
+          <img :src="selectedProduct.imageLink" alt="selectedProduct-image" class="image-thumbnail" />
         </div>
 
         <hr />
@@ -27,12 +27,12 @@
         </div>
       </div>
       <div class="decription col-lg-4 text-left">
-        <h3>{{ product.details }}</h3>
+        <h3>{{ selectedProduct.details }}</h3>
         <hr />
         <p>
-          <strong>&#8358; {{ product.price }}</strong>
+          <strong>&#8358; {{ selectedProduct.price }}</strong>
         </p>
-        <strike> &#8358; {{ product.fomerPrice }}</strike>
+        <strike> &#8358; {{ selectedProduct.fomerPrice }}</strike>
         <hr />
         <b-button block variant="warning" class="mb-3">
           <i class="fas fa-shopping-cart float-left"></i>
@@ -102,7 +102,7 @@
       </div>
     </div>
   </div>
-  </div> -->
+  </div>
 </template>
 
 <script>

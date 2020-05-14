@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
+// import * as Cookies from 'js-cookie'
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  plugins: [createPersistedState({
+    storage: window.sessionStorage,
+})],
   state: {
     categoryList: [{
         name: "Shoes",
@@ -117,13 +122,13 @@ export default new Vuex.Store({
         id: 10
       }
     ],
-    selectedProduct: null
+    selectedProduct: null,
   },
 
   mutations: {
     selectedProductValue(state, product) {
       state.selectedProduct = product;
-    }
+    },
   },
   actions: {},
   modules: {}
