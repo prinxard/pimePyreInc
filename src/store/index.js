@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+
+
+// imported module to make store state persistent
 import createPersistedState from 'vuex-persistedstate'
-// import * as Cookies from 'js-cookie'
 
 Vue.use(Vuex);
 
+// Code for persistent state
 export default new Vuex.Store({
   plugins: [createPersistedState({
     storage: window.sessionStorage,
