@@ -125,7 +125,7 @@ export default new Vuex.Store({
         id: 10
       }
     ],
-    
+
 shoes: [
   {
     inStock: 10,
@@ -150,12 +150,16 @@ shoes: [
 ],
 
     selectedProduct: null,
+    selectedCategory: null,
   },
 
   mutations: {
     selectedProductValue(state, product) {
       state.selectedProduct = product;
     },
+    selectedCategoryValue(state, category){
+      state.selectedCategory = category;
+    }
   },
   actions: {},
   modules: {}
