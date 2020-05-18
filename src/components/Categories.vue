@@ -1,7 +1,7 @@
 <template> 
 <div>
 <ul>
-    <li class="catlist btn btn-primary" >{{category.name}}</li>
+    <li class="catlist btn btn-primary" @click="goToProductCat(category)">{{category.name}}</li>
 </ul>
 </div>
 
@@ -9,7 +9,16 @@
 
 <script>
 export default {
+    
     props: ['category'],
+
+      methods: {
+    goToProductCat(category) {
+      this.$store.commit('selectedCategoryValue', category);
+      this.$router.push({ path: "/shoespage" });
+    },
+  },
+    
   data() {
     
   }
