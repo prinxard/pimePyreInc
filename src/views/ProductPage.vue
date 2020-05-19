@@ -112,23 +112,7 @@ export default {
   computed: {
         ...mapState(['selectedProduct'])
     },
-  // computed: {
-  //   clickedProduct() {
-  //     return this.$store.state.selectedProduct;
-  //   },
-  // }
-  // name: "ProductDetails",
-  // data() {
-  //   return {
-  //     items: []
-  //   };
-  // },
-
-  // created() {
-  //   this.items = this.$store.state.products.filter(item => {
-  //     return item.id == parseInt(this.$route.params.id);
-  //   });
-  // }
+ 
 };
 </script>
 
