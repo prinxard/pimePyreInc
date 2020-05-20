@@ -126,29 +126,6 @@ export default new Vuex.Store({
       }
     ],
 
-shoes: [
-  {
-    inStock: 10,
-    fomerPrice: "500,000",
-    details: "Beautifully designed and durable",
-    name: "Shoes",
-    price: "5,000",
-    imageLink: require("@/assets/images/shoes.jpg"),
-    id: 3
-  },
-  {
-    inStock: 6,
-    fomerPrice: "500,000",
-    details: "Beautifully designed and durable",
-    name: "Shoes",
-    price: "5,000",
-    imageLink: require("@/assets/images/shoes2.jpg"),
-    id: 4
-  },
-
-
-],
-
     selectedProduct: null,
     selectedCategory: null,
   },

@@ -21,9 +21,7 @@
           {{ Shoes.inStock }} In stock
         </span> -->
           <a href="" @click="goToProduct(productsInfo)"><button class=" btn btn-primary">Buy Now</button></a>
-        <!-- <router-link :to="`/products/${productsInfo.id}-${productsInfo.name.replace(/[' ']+/g,'-').toLowerCase()}`"><button :disabled="productsInfo.inStock == 0" class=" btn btn-primary">
-           Buy Now
-        </button></router-link> -->
+       
       </div>
     </div>
   </div>
@@ -37,7 +35,7 @@ export default {
 
          
     allProducts() {
-      return this.$store.state.shoes;
+      return this.$store.state.categoryList;
     },
 
     },
