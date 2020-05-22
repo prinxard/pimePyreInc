@@ -29,7 +29,7 @@ export default {
 }
 .btn {
   font-size: 15px;
-  padding: 10px;
+  padding: 9px;
   width: 100%;
 }
 </style>
