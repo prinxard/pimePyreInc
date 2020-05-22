@@ -9,6 +9,7 @@
 </template>
 
 <script>
+
 export default {
   props: ["category"],
 
@@ -27,7 +28,7 @@ export default {
   list-style-type: none;
 }
 .btn {
-  font-size: 16px;
+  font-size: 15px;
   padding: 10px;
   width: 100%;
 }
