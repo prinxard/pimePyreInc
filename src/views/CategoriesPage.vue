@@ -12,15 +12,7 @@
       <div  class="card-body body-card">
         <h5 class="card-title">{{ selectedCategory.name }}</h5>
         <p>&#8358; {{ selectedCategory.price }}</p>
-        <!-- <span
-          :class="{
-            few: productsInfo.inStock < 10,
-            none: productsInfo.inStock == 0,
-          }"
-        >
-          {{ Shoes.inStock }} In stock
-        </span> -->
-          <a href="" @click="goToProduct(productsInfo)"><button class=" btn btn-primary">Buy Now</button></a>
+          <a @click="goToProduct(productsInfo)"><button class=" btn btn-primary">Buy Now</button></a>
        
       </div>
     </div>

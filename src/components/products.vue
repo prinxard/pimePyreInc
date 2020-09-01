@@ -6,6 +6,7 @@
           :src="productsInfo.imageLink"
           class="card-img-top image"
           alt="product-image"
+          @click="goToProduct(productsInfo)"
         />
     
 
@@ -20,7 +21,7 @@
         >
           {{ productsInfo.inStock }} In stock
         </span>
-          <a href="" @click="goToProduct(productsInfo)"><button class=" btn btn-primary">Buy Now</button></a>
+          <a  @click="goToProduct(productsInfo)"><button class=" btn btn-primary">Buy Now</button></a>
       </div>
     </div>
   </div>
