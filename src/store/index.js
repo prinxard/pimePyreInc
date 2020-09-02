@@ -7,7 +7,7 @@ import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex);
 
-// Code for persistent state
+
 export default new Vuex.Store({
   plugins: [createPersistedState({
     storage: window.sessionStorage,
